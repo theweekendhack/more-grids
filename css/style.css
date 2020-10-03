@@ -1,0 +1,61 @@
+
+/*CSS reset*/
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+
+}
+
+
+
+#first-section
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: purple;
+    column-gap: 10px;
+    row-gap: 10px;
+    height:100vh;
+   /*justify-items: center;*/
+
+}
+
+#first-section > div
+{
+
+  /*  width:150px;*/
+   
+   
+}
+
+
+#first-section > div:nth-child(1)
+{
+    
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+  
+}
+
+#para
+{
+    align-self: center;
+}
+
+
+
+#first-section > div:nth-child(even)
+{
+    background-color: salmon;
+}
+
+#first-section > div:nth-child(odd)
+{
+    background-color:aqua;
+}
